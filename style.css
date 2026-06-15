@@ -1,0 +1,38 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Class Selector */
+.description {
+    color: green;
+    font-weight: bold;
+}
+
+/* ID Selector */
+#main-heading {
+    color: blue;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
