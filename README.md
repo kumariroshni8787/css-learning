@@ -1020,3 +1020,305 @@ Box Shadow
 Practice completed:
 
 Designed a Profile Card using rounded corners, shadows, and background styling.
+
+
+# Day 5 - Display & Position
+
+## 📌 Goal
+
+Learn how to control the layout and positioning of elements on a webpage.
+
+---
+
+# What is Display?
+
+The `display` property determines how an element appears and behaves in the layout.
+
+Different display values affect how elements take up space and interact with other elements.
+
+---
+
+# 1. display: block
+
+A block element:
+
+* Takes the full available width.
+* Starts on a new line.
+* Can have width and height.
+
+### Examples of Block Elements
+
+```html
+<div></div>
+<p></p>
+<h1></h1>
+```
+
+### Example
+
+```css
+.box {
+    display: block;
+}
+```
+
+---
+
+# 2. display: inline
+
+An inline element:
+
+* Takes only the space it needs.
+* Does not start on a new line.
+* Width and height usually do not work.
+
+### Examples of Inline Elements
+
+```html
+<span></span>
+<a></a>
+<strong></strong>
+```
+
+### Example
+
+```css
+span {
+    display: inline;
+}
+```
+
+---
+
+# 3. display: inline-block
+
+Combines features of inline and block.
+
+* Stays on the same line.
+* Allows width and height.
+
+### Example
+
+```css
+.button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+}
+```
+
+---
+
+# 4. display: none
+
+Completely hides an element.
+
+### Example
+
+```css
+.hidden {
+    display: none;
+}
+```
+
+The element:
+
+* Is not visible.
+* Does not take space on the page.
+
+---
+
+# What is Position?
+
+The `position` property controls where an element appears on the page.
+
+---
+
+# 5. position: static
+
+Default position for all elements.
+
+### Example
+
+```css
+.box {
+    position: static;
+}
+```
+
+Characteristics:
+
+* Normal document flow.
+* top, right, bottom, left do not work.
+
+---
+
+# 6. position: relative
+
+Moves an element relative to its original position.
+
+### Example
+
+```css
+.box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+```
+
+The original space remains reserved.
+
+---
+
+# 7. position: absolute
+
+Positions an element relative to its nearest positioned parent.
+
+### Example
+
+```css
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+```
+
+Characteristics:
+
+* Removed from normal flow.
+* Can overlap other elements.
+
+---
+
+# 8. position: fixed
+
+The element stays fixed on the screen.
+
+### Example
+
+```css
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+```
+
+Characteristics:
+
+* Remains visible while scrolling.
+* Commonly used for floating buttons.
+
+---
+
+# 9. position: sticky
+
+Acts like relative until a scroll point is reached.
+
+Then it becomes fixed.
+
+### Example
+
+```css
+.navbar {
+    position: sticky;
+    top: 0;
+}
+```
+
+Commonly used for:
+
+* Navigation bars
+* Section headers
+
+---
+
+# 10. z-index
+
+Controls which element appears on top.
+
+Higher value = appears above lower values.
+
+### Example
+
+```css
+.box1 {
+    z-index: 1;
+}
+
+.box2 {
+    z-index: 10;
+}
+```
+
+`box2` will appear above `box1`.
+
+### Important
+
+`z-index` works on positioned elements.
+
+```css
+.box {
+    position: relative;
+    z-index: 5;
+}
+```
+
+
+# Display Comparison
+
+| Value        | New Line | Width/Height |
+| ------------ | -------- | ------------ |
+| block        | Yes      | Yes          |
+| inline       | No       | No           |
+| inline-block | No       | Yes          |
+| none         | Hidden   | Hidden       |
+
+---
+
+# Position Comparison
+
+| Value    | Description                   |
+| -------- | ----------------------------- |
+| static   | Default position              |
+| relative | Moves from original position  |
+| absolute | Relative to positioned parent |
+| fixed    | Fixed to screen               |
+| sticky   | Becomes fixed while scrolling |
+
+---
+
+# Key Points
+
+* `display` controls how elements appear.
+* `block` takes full width.
+* `inline` stays in the same line.
+* `inline-block` allows width and height.
+* `none` completely hides elements.
+* `position` controls element placement.
+* `sticky` is commonly used for navbars.
+* `z-index` controls stacking order.
+
+📖 Day 5 Summary
+
+Today I learned how to control webpage layouts using the display and position properties.
+
+Topics Covered
+display
+block
+inline
+inline-block
+none
+position
+static
+relative
+absolute
+fixed
+sticky
+z-index
