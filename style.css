@@ -1,63 +1,59 @@
 
-
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page Styling */
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 40px;
-}
+    font-family: Arial, sans-serif;
 
-/* Container */
-.container {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
 }
 
-/* Common Card Styles */
-.card {
+.profile-card {
+    width: 320px;
     background-color: white;
-    width: 300px;
-}
+    text-align: center;
 
-/* Card 1 */
-.card1 {
-    border: 2px solid black;
-    padding: 20px;
-    margin: 10px;
-}
-
-/* Card 2 */
-.card2 {
-    border: 4px dashed blue;
-    padding: 30px;
-    margin: 10px;
-}
-
-/* Card 3 */
-.card3 {
-    border: 3px dotted green;
     padding: 25px;
-    margin: 10px;
-    box-sizing: border-box;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Headings */
-.card h2 {
+.profile-card img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
     margin-bottom: 15px;
 }
 
-/* Paragraph */
-.card p {
-    line-height: 1.6;
+.profile-card h2 {
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.profile-card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 

@@ -823,3 +823,200 @@ Margin
 Box Sizing
 
 I also practiced by creating 3 different styled cards using these properties.
+
+
+# Day 4 - Backgrounds & Borders
+
+## 📌 Goal
+
+Learn how to improve the design and appearance of web pages using backgrounds and borders.
+
+---
+
+# What are Backgrounds?
+
+Background properties are used to add colors and images behind an element.
+
+They help make a webpage more attractive and visually appealing.
+
+---
+
+# 1. background-color
+
+The `background-color` property sets a background color for an element.
+
+### Syntax
+
+```css
+background-color: color;
+```
+
+### Example
+
+```css
+.box {
+    background-color: lightblue;
+}
+```
+
+You can use:
+
+```css
+background-color: red;
+background-color: #3498db;
+background-color: rgb(52, 152, 219);
+```
+
+---
+
+# 2. background-image
+
+The `background-image` property adds an image as the background.
+
+### Syntax
+
+```css
+background-image: url("image.jpg");
+```
+
+### Example
+
+```css
+.hero {
+    background-image: url("nature.jpg");
+}
+```
+
+---
+
+# 3. background-size
+
+The `background-size` property controls the size of the background image.
+
+### Example
+
+```css
+.hero {
+    background-size: cover;
+}
+```
+
+Common values:
+
+```css
+background-size: cover;
+background-size: contain;
+background-size: 100% 100%;
+```
+
+### cover
+
+The image covers the entire element.
+
+```css
+background-size: cover;
+```
+
+---
+
+# 4. background-position
+
+The `background-position` property controls where the image appears.
+
+### Example
+
+```css
+.hero {
+    background-position: center;
+}
+```
+
+Other values:
+
+```css
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+background-position: center;
+```
+
+---
+
+# 5. border-radius
+
+The `border-radius` property creates rounded corners.
+
+### Example
+
+```css
+.box {
+    border-radius: 10px;
+}
+```
+
+### Circle Example
+
+```css
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+```
+
+---
+
+# 6. box-shadow
+
+The `box-shadow` property adds shadow effects around elements.
+
+### Syntax
+
+```css
+box-shadow: horizontal vertical blur color;
+```
+
+### Example
+
+```css
+.card {
+    box-shadow: 0 4px 10px gray;
+}
+```
+
+### Strong Shadow
+
+```css
+.card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+```
+
+
+# Key Points
+
+* `background-color` adds color behind an element.
+* `background-image` adds an image as the background.
+* `background-size` controls image size.
+* `background-position` controls image placement.
+* `border-radius` creates rounded corners.
+* `box-shadow` adds depth using shadows.
+* These properties make websites look modern and attractive.
+
+📖 Day 4 Summary
+
+Today I learned how to improve webpage design using CSS backgrounds and border effects.
+
+Topics covered:
+
+Background Color
+Background Image
+Background Size
+Background Position
+Border Radius
+Box Shadow
+
+Practice completed:
+
+Designed a Profile Card using rounded corners, shadows, and background styling.
