@@ -299,3 +299,254 @@ Class Selector
 ID Selector
 Universal Selector
 Practiced styling headings, paragraphs, and buttons.
+
+
+
+# Day 02 - Colors & Text Styling
+
+## Goal
+
+Learn how to apply colors and style text to make web pages visually appealing and easier to read.
+
+---
+
+## Topics Covered
+
+* Colors in CSS
+
+  * Color Names
+  * HEX Colors
+  * RGB Colors
+* Text Styling Properties
+
+  * color
+  * font-size
+  * font-family
+  * font-weight
+  * text-align
+  * text-transform
+  * text-decoration
+  * line-height
+
+---
+
+## Colors in CSS
+
+CSS provides multiple ways to define colors.
+
+### 1. Color Names
+
+You can use predefined color names.
+
+```css
+h1 {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+```
+
+### 2. HEX Colors
+
+HEX (Hexadecimal) colors start with `#` followed by six characters.
+
+```css
+h1 {
+  color: #ff0000;
+}
+
+p {
+  color: #0000ff;
+}
+```
+
+Examples:
+
+| Color | HEX Value |
+| ----- | --------- |
+| Red   | #ff0000   |
+| Green | #00ff00   |
+| Blue  | #0000ff   |
+| Black | #000000   |
+| White | #ffffff   |
+
+### 3. RGB Colors
+
+RGB stands for Red, Green, and Blue.
+
+```css
+h1 {
+  color: rgb(255, 0, 0);
+}
+
+p {
+  color: rgb(0, 0, 255);
+}
+```
+
+Values range from `0` to `255`.
+
+---
+
+## Text Styling Properties
+
+### color
+
+Changes the text color.
+
+```css
+p {
+  color: navy;
+}
+```
+
+### font-size
+
+Controls the size of text.
+
+```css
+p {
+  font-size: 18px;
+}
+```
+
+### font-family
+
+Defines the font style.
+
+```css
+body {
+  font-family: Arial, sans-serif;
+}
+```
+
+### font-weight
+
+Controls the thickness of text.
+
+```css
+h1 {
+  font-weight: bold;
+}
+```
+
+Common values:
+
+* normal
+* bold
+* 100 - 900
+
+### text-align
+
+Aligns text horizontally.
+
+```css
+h1 {
+  text-align: center;
+}
+```
+
+Values:
+
+* left
+* center
+* right
+* justify
+
+### text-transform
+
+Changes the text case.
+
+```css
+h1 {
+  text-transform: uppercase;
+}
+```
+
+Values:
+
+* uppercase
+* lowercase
+* capitalize
+
+### text-decoration
+
+Adds or removes text decoration.
+
+```css
+a {
+  text-decoration: none;
+}
+```
+
+Examples:
+
+```css
+text-decoration: underline;
+text-decoration: line-through;
+```
+
+### line-height
+
+Controls spacing between lines of text.
+
+```css
+p {
+  line-height: 1.8;
+}
+```
+
+---
+
+## Practice Project: Simple Article Page
+
+### HTML
+
+```html
+<h1>Learning CSS</h1>
+
+<p>
+CSS helps make websites attractive and user-friendly.
+It controls colors, fonts, spacing, and layout.
+</p>
+```
+
+### CSS
+
+```css
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #3498db;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  color: rgb(80, 80, 80);
+  font-size: 18px;
+  line-height: 1.8;
+}
+```
+
+---
+
+## Key Points
+
+* CSS colors can be defined using Names, HEX, or RGB values.
+* The `color` property changes text color.
+* `font-size` controls text size.
+* `font-family` changes the font style.
+* `font-weight` controls text thickness.
+* `text-align` manages text alignment.
+* `text-transform` changes text case.
+* `text-decoration` adds or removes decorations.
+* `line-height` improves readability by adjusting line spacing.
+
+📖 Day 02 Summary
+
+Today I learned how to add colors and style text using CSS. I explored different color formats such as Color Names, HEX, and RGB. I also practiced important text properties like font-size, font-family, font-weight, text-align, text-transform, text-decoration, and line-height. Finally, I applied these concepts by creating a simple article page.

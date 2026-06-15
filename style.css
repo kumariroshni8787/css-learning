@@ -1,38 +1,22 @@
-/* Universal Selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-/* Element Selector */
+h1 {
+  color: #3498db;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 p {
-    font-size: 18px;
-    color: #333;
-    margin: 10px 0;
-}
-
-/* Class Selector */
-.description {
-    color: green;
-    font-weight: bold;
-}
-
-/* ID Selector */
-#main-heading {
-    color: blue;
-    margin-bottom: 15px;
-}
-
-/* Button Styling */
-.btn {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: darkgreen;
+  color: rgb(60, 60, 60);
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
 }
