@@ -550,3 +550,276 @@ p {
 📖 Day 02 Summary
 
 Today I learned how to add colors and style text using CSS. I explored different color formats such as Color Names, HEX, and RGB. I also practiced important text properties like font-size, font-family, font-weight, text-align, text-transform, text-decoration, and line-height. Finally, I applied these concepts by creating a simple article page.
+
+
+
+# Day 3 - CSS Box Model
+
+## 📌 Goal
+
+Learn how spacing and sizing work in CSS using the Box Model.
+
+---
+
+# What is the CSS Box Model?
+
+Every HTML element is treated as a rectangular box.
+
+The box model consists of:
+
+1. Content
+2. Padding
+3. Border
+4. Margin
+
+```text
++----------------------+
+|       Margin         |
+|  +----------------+  |
+|  |    Border      |  |
+|  | +------------+ |  |
+|  | |  Padding   | |  |
+|  | |  Content   | |  |
+|  | +------------+ |  |
+|  +----------------+  |
++----------------------+
+```
+
+---
+
+# 1. Width
+
+The `width` property defines the horizontal size of an element.
+
+```css
+.box {
+    width: 300px;
+}
+```
+
+### Example
+
+```css
+.card {
+    width: 250px;
+}
+```
+
+---
+
+# 2. Height
+
+The `height` property defines the vertical size of an element.
+
+```css
+.box {
+    height: 150px;
+}
+```
+
+### Example
+
+```css
+.card {
+    height: 200px;
+}
+```
+
+---
+
+# 3. Border
+
+The `border` property creates a boundary around an element.
+
+### Syntax
+
+```css
+border: width style color;
+```
+
+### Example
+
+```css
+.card {
+    border: 2px solid black;
+}
+```
+
+Other border styles:
+
+```css
+border: 2px dashed red;
+border: 2px dotted blue;
+```
+
+---
+
+# 4. Padding
+
+Padding is the space between the content and the border.
+
+```css
+.card {
+    padding: 20px;
+}
+```
+
+### Example
+
+```css
+.card {
+    border: 2px solid black;
+    padding: 15px;
+}
+```
+
+Padding makes the content appear more spacious.
+
+---
+
+# 5. Margin
+
+Margin is the space outside the border.
+
+```css
+.card {
+    margin: 20px;
+}
+```
+
+### Example
+
+```css
+.card {
+    margin: 30px;
+}
+```
+
+Margin creates distance between elements.
+
+---
+
+# 6. Box Sizing
+
+The `box-sizing` property controls how width and height are calculated.
+
+### Default: content-box
+
+```css
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+}
+```
+
+Actual width becomes:
+
+```text
+300 + 20 + 20 + 5 + 5 = 350px
+```
+
+---
+
+### border-box
+
+```css
+.box {
+    box-sizing: border-box;
+}
+```
+
+Now padding and border are included inside the specified width.
+
+```css
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+```
+
+Actual width remains:
+
+```text
+300px
+```
+
+### Best Practice
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+Many developers use this globally.
+
+---
+
+# Practice Task
+
+## Create 3 Different Styled Cards
+
+### Card 1
+
+```css
+.card1 {
+    width: 250px;
+    padding: 15px;
+    border: 2px solid black;
+    margin: 20px;
+}
+```
+
+### Card 2
+
+```css
+.card2 {
+    width: 300px;
+    padding: 25px;
+    border: 3px dashed blue;
+    margin: 20px;
+}
+```
+
+### Card 3
+
+```css
+.card3 {
+    width: 280px;
+    padding: 20px;
+    border: 2px dotted green;
+    margin: 20px;
+    box-sizing: border-box;
+}
+```
+
+---
+
+# Key Points
+
+* `width` controls horizontal size.
+* `height` controls vertical size.
+* `border` creates an outline around an element.
+* `padding` adds space inside the border.
+* `margin` adds space outside the border.
+* `box-sizing: border-box` makes sizing easier and more predictable.
+
+📖 Day 3 Summary
+
+Today I learned the CSS Box Model, which controls the size and spacing of elements.
+
+I studied:
+
+Width
+Height
+Border
+Padding
+Margin
+Box Sizing
+
+I also practiced by creating 3 different styled cards using these properties.
