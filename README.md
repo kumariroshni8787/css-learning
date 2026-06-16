@@ -1816,4 +1816,170 @@ Topics learned:
 CSS Grid makes creating website layouts easier and more organized.
 
 
+# 📅 Day 8: Transitions & Animations
+
+## 🎯 Goal
+
+Learn how to add smooth effects and animations to web elements using CSS.
+
+CSS transitions and animations help make websites more interactive and visually attractive.
+
+---
+
+# 📚 Topics Covered
+
+## 1. transition
+
+`transition` is used to create a smooth change between two states.
+
+Example:
+
+```css
+button {
+    transition: 0.3s;
+}
+```
+
+When a property changes, it happens smoothly instead of instantly.
+
+Example:
+
+```css
+button:hover {
+    background-color: blue;
+}
+```
+
+---
+
+## 2. transform
+
+`transform` is used to change the position, size, or rotation of an element.
+
+Example:
+
+```css
+.box {
+    transform: scale(1.2);
+}
+```
+
+---
+
+# Transform Functions
+
+## 3. scale()
+
+`scale()` increases or decreases the size of an element.
+
+Example:
+
+```css
+.box:hover {
+
+    transform: scale(1.2);
+
+}
+```
+
+The element becomes 20% bigger.
+
+---
+
+## 4. rotate()
+
+`rotate()` rotates an element.
+
+Example:
+
+```css
+.box:hover {
+
+    transform: rotate(45deg);
+
+}
+```
+
+The element rotates 45 degrees.
+
+---
+
+## 5. translate()
+
+`translate()` moves an element from its original position.
+
+Example:
+
+```css
+.box:hover {
+
+    transform: translateX(50px);
+
+}
+```
+
+The element moves 50px to the right.
+
+---
+
+## 6. @keyframes
+
+`@keyframes` is used to create custom animations.
+
+Example:
+
+```css
+@keyframes move {
+
+    from {
+        left:0;
+    }
+
+    to {
+        left:100px;
+    }
+
+}
+```
+
+It defines animation steps.
+
+---
+
+## 7. animation
+
+`animation` applies a keyframe animation to an element.
+
+Example:
+
+```css
+.box {
+
+    animation: move 2s infinite;
+
+}
+```
+
+
+
+# 📝 Summary of Day 8
+
+Today I learned how to add animations and effects using CSS.
+
+Topics learned:
+
+- `transition` → creates smooth changes
+- `transform` → changes element appearance
+- `scale()` → increases/decreases size
+- `rotate()` → rotates elements
+- `translate()` → moves elements
+- `@keyframes` → creates custom animations
+- `animation` → applies animations
+
+Practice completed:
+
+✅ Animated button  
+✅ Rotating loader animation  
+
+
 

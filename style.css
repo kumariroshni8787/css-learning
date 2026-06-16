@@ -1,164 +1,90 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
 
-
-.dashboard {
-
-    height: 100vh;
-
-    display: grid;
-
-    grid-template-columns: 220px 1fr;
-
-    grid-template-rows: 80px 1fr 50px;
-
-    gap: 10px;
-
-    padding: 10px;
-
-}
-
-
-
-/* Header */
-
-header {
-
-    background-color: #333;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    grid-column: 1 / 3;
-
-}
-
-
-
-/* Sidebar */
-
-aside {
-
-    background-color: #444;
-    color: white;
-
-    padding: 20px;
-
-}
-
-
-aside ul {
-
-    list-style: none;
-
-    margin-top: 20px;
-
-}
-
-
-aside li {
-
-    margin: 15px 0;
-
-}
-
-
-
-/* Main */
-
-main {
-
-    background-color: white;
-
-    padding: 20px;
-
-}
-
-
-
-/* Cards Grid */
-
-.cards {
-
-    display: grid;
-
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 20px;
-
-    margin-top: 20px;
-
-}
-
-
-.card {
-
-    background-color: skyblue;
-
-    padding: 20px;
-
-    border-radius: 10px;
-
-}
-
-
-
-/* Footer */
-
-footer {
-
-    background-color: #333;
-
-    color:white;
+    height:100vh;
 
     display:flex;
+
+    flex-direction:column;
 
     justify-content:center;
 
     align-items:center;
 
-
-    grid-column:1 / 3;
+    gap:50px;
 
 }
 
 
 
-/* Responsive */
+/* Animated Button */
 
-@media(max-width:700px){
+.btn {
+
+    padding:15px 40px;
+
+    font-size:20px;
+
+    border:none;
+
+    background:#3498db;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
 
 
-    .dashboard{
 
-        grid-template-columns:1fr;
+.btn:hover {
+
+    transform:scale(1.1);
+
+    background:#2ecc71;
+
+}
+
+
+
+/* Loader Animation */
+
+
+.loader {
+
+    width:60px;
+
+    height:60px;
+
+    border:8px solid #ddd;
+
+    border-top-color:#3498db;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+
+
+@keyframes spin {
+
+
+    from {
+
+        transform:rotate(0deg);
 
     }
 
 
-    header,
-    footer{
+    to {
 
-        grid-column:1;
-
-    }
-
-
-    .cards{
-
-        grid-template-columns:1fr;
+        transform:rotate(360deg);
 
     }
 
