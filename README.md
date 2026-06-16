@@ -1322,3 +1322,313 @@ absolute
 fixed
 sticky
 z-index
+
+# 📅 Day 6: Flexbox
+
+## 🎯 Goal
+
+Learn how to create modern and responsive layouts using Flexbox.
+
+---
+
+# What is Flexbox?
+
+Flexbox (Flexible Box Layout) is a CSS layout model that helps arrange items in rows or columns.
+
+It makes it easier to:
+
+* Align items
+* Distribute space
+* Create responsive layouts
+* Build modern UI designs
+
+To use Flexbox, set the container's display property to `flex`.
+
+```css
+.container {
+    display: flex;
+}
+```
+
+---
+
+# 1. display: flex
+
+Converts a normal container into a flex container.
+
+```css
+.container {
+    display: flex;
+}
+```
+
+### Example
+
+```html
+<div class="container">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+</div>
+```
+
+```css
+.container {
+    display: flex;
+}
+```
+
+### Output
+
+Items appear in a row by default.
+
+```
+Box 1  Box 2  Box 3
+```
+
+---
+
+# 2. flex-direction
+
+Controls the direction of flex items.
+
+### Row (Default)
+
+```css
+.container {
+    display: flex;
+    flex-direction: row;
+}
+```
+
+```
+Box 1  Box 2  Box 3
+```
+
+### Column
+
+```css
+.container {
+    display: flex;
+    flex-direction: column;
+}
+```
+
+```
+Box 1
+Box 2
+Box 3
+```
+
+### Other Values
+
+```css
+flex-direction: row-reverse;
+flex-direction: column-reverse;
+```
+
+---
+
+# 3. justify-content
+
+Aligns items along the **main axis**.
+
+### Center
+
+```css
+.container {
+    display: flex;
+    justify-content: center;
+}
+```
+
+### Common Values
+
+```css
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+```
+
+### Example
+
+```css
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+```
+
+```
+Box1          Box2          Box3
+```
+
+---
+
+# 4. align-items
+
+Aligns items along the **cross axis**.
+
+```css
+.container {
+    display: flex;
+    align-items: center;
+}
+```
+
+### Common Values
+
+```css
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: stretch;
+```
+
+### Example
+
+```css
+.container {
+    display: flex;
+    height: 200px;
+    align-items: center;
+}
+```
+
+Items will be vertically centered inside the container.
+
+---
+
+# 5. flex-wrap
+
+Controls whether items stay on one line or move to the next line.
+
+### No Wrap (Default)
+
+```css
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+```
+
+### Wrap
+
+```css
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+```
+
+When there isn't enough space, items move to the next line.
+
+---
+
+# 6. gap
+
+Adds space between flex items.
+
+```css
+.container {
+    display: flex;
+    gap: 20px;
+}
+```
+
+### Benefits
+
+* Cleaner than using margins
+* Easy spacing control
+* Works for rows and columns
+
+---
+
+# Combining Flexbox Properties
+
+```css
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+```
+
+This creates a flexible and responsive layout.
+
+---
+
+# Practice Project: Responsive Card Layout
+
+## HTML
+
+```html
+<div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+</div>
+```
+
+## CSS
+
+```css
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+```
+
+### Result
+
+* Cards appear in a row on larger screens.
+* Cards automatically move to the next line on smaller screens.
+* Layout becomes responsive with minimal code.
+
+---
+
+# Key Points to Remember
+
+✅ Flexbox is used for one-dimensional layouts (row or column).
+
+✅ `display: flex` activates Flexbox.
+
+✅ `flex-direction` controls layout direction.
+
+✅ `justify-content` aligns items on the main axis.
+
+✅ `align-items` aligns items on the cross axis.
+
+✅ `flex-wrap` allows items to move to the next line.
+
+✅ `gap` creates spacing between items.
+
+✅ Flexbox is widely used for modern responsive layouts.
+
+📖 Day 6 Summary
+
+Today I learned Flexbox, one of the most important CSS layout systems.
+
+You covered:
+
+display: flex
+flex-direction
+justify-content
+align-items
+flex-wrap
+gap
