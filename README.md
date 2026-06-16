@@ -1632,3 +1632,188 @@ justify-content
 align-items
 flex-wrap
 gap
+
+
+
+# 📅 Day 7: CSS Grid
+
+## 🎯 Goal
+Learn how to create advanced layouts using CSS Grid.
+
+CSS Grid is a powerful layout system that helps us create rows and columns easily. It is mainly used for building complex page structures like dashboards, galleries, and website layouts.
+
+---
+
+# 📚 Topics Covered
+
+## 1. display: grid
+
+`display: grid` is used to convert an element into a grid container.
+
+Example:
+
+```css
+.container {
+  display: grid;
+}
+```
+
+After applying grid, we can control the layout using rows and columns.
+
+---
+
+## 2. grid-template-columns
+
+`grid-template-columns` defines the number and size of columns in a grid.
+
+Example:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+```
+
+This creates 3 columns with 200px width each.
+
+Using `fr` unit:
+
+```css
+.container {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+```
+
+This creates 3 equal-width columns.
+
+---
+
+## 3. grid-template-rows
+
+`grid-template-rows` defines the height of rows.
+
+Example:
+
+```css
+.container {
+  display: grid;
+  grid-template-rows: 100px 200px;
+}
+```
+
+This creates two rows:
+- First row: 100px height
+- Second row: 200px height
+
+---
+
+## 4. gap
+
+`gap` adds space between grid items.
+
+Example:
+
+```css
+.container {
+  display: grid;
+  gap: 20px;
+}
+```
+
+It creates 20px space between rows and columns.
+
+---
+
+## 5. grid-column
+
+`grid-column` controls how many columns an item occupies.
+
+Example:
+
+```css
+.item {
+  grid-column: 1 / 3;
+}
+```
+
+The item will start from column 1 and end before column 3.
+
+---
+
+## 6. grid-row
+
+`grid-row` controls how many rows an item occupies.
+
+Example:
+
+```css
+.item {
+  grid-row: 1 / 3;
+}
+```
+
+The item will cover from row 1 to row 3.
+
+---
+
+# 🧪 Practice: Dashboard Layout
+
+Create a dashboard layout using CSS Grid.
+
+Example structure:
+
+```html
+<div class="dashboard">
+  <header>Header</header>
+  <aside>Sidebar</aside>
+  <main>Main Content</main>
+  <footer>Footer</footer>
+</div>
+```
+
+CSS:
+
+```css
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr 50px;
+  gap: 10px;
+}
+
+header {
+  grid-column: 1 / 3;
+}
+
+footer {
+  grid-column: 1 / 3;
+}
+```
+
+This creates:
+
+- Header at the top
+- Sidebar on the left
+- Main content area
+- Footer at the bottom
+
+---
+
+# 📝 Summary of Day 7
+
+Today I learned CSS Grid, which is used for creating advanced layouts.
+
+Topics learned:
+
+- `display: grid` → creates a grid container
+- `grid-template-columns` → controls columns
+- `grid-template-rows` → controls rows
+- `gap` → adds spacing between items
+- `grid-column` → controls column placement
+- `grid-row` → controls row placement
+
+CSS Grid makes creating website layouts easier and more organized.
+
+
+

@@ -3,42 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Card Layout</title>
+    <title>Day 7 CSS Grid Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="card-container">
+    <div class="dashboard">
 
-        <div class="card">
-            <img src="image.png" alt="HTML">
-            <h2>HTML</h2>
-            <p>HTML is used to create the structure of web pages.</p>
-            <button>Learn More</button>
-        </div>
+        <header>
+            <h1>My Dashboard</h1>
+        </header>
 
-        <div class="card">
-            <img src="image1.png" alt="CSS">
-            <h2>CSS</h2>
-            <p>CSS is used to style and design web pages.</p>
-            <button>Learn More</button>
-        </div>
+        <aside>
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
 
-        <div class="card">
-            <img src="image2.png" alt="JavaScript">
-            <h2>JavaScript</h2>
-            <p>JavaScript adds interactivity and dynamic behavior.</p>
-            <button>Learn More</button>
-        </div>
+        <main>
+            <h2>Main Content</h2>
 
-        <div class="card">
-            <img src="image3.png" alt="React">
-            <h2>React</h2>
-            <p>React is a popular JavaScript library for building UIs.</p>
-            <button>Learn More</button>
-        </div>
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Card 1</h3>
+                    <p>Learning CSS Grid</p>
+                </div>
+
+                <div class="card">
+                    <h3>Card 2</h3>
+                    <p>Building Layouts</p>
+                </div>
+
+                <div class="card">
+                    <h3>Card 3</h3>
+                    <p>Responsive Design</p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>CSS Learning - Day 7</p>
+        </footer>
 
     </div>
+
 
 </body>
 </html>

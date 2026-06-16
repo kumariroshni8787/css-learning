@@ -1,70 +1,165 @@
-/* CSS (style.css)
-Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page Styling */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 40px;
+    background-color: #f2f2f2;
 }
 
-/* Flex Container */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+
+.dashboard {
+
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    grid-template-rows: 80px 1fr 50px;
+
+    gap: 10px;
+
+    padding: 10px;
+
 }
 
-/* Card Design */
-.card {
-    width: 300px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
 
-/* Hover Effect */
-.card:hover {
-    transform: translateY(-5px);
-}
 
-/* Image */
-.card img {
-    width: 100%;
-    display: block;
-}
+/* Header */
 
-/* Content */
-.card h2 {
-    padding: 15px;
-    color: #333;
-}
+header {
 
-.card p {
-    padding: 0 15px 15px;
-    color: #666;
-    line-height: 1.5;
-}
-
-/* Button */
-.card button {
-    margin: 15px;
-    padding: 10px 15px;
-    border: none;
-    background-color: #007bff;
+    background-color: #333;
     color: white;
-    border-radius: 5px;
-    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    grid-column: 1 / 3;
+
 }
 
-.card button:hover {
-    background-color: #0056b3;
+
+
+/* Sidebar */
+
+aside {
+
+    background-color: #444;
+    color: white;
+
+    padding: 20px;
+
+}
+
+
+aside ul {
+
+    list-style: none;
+
+    margin-top: 20px;
+
+}
+
+
+aside li {
+
+    margin: 15px 0;
+
+}
+
+
+
+/* Main */
+
+main {
+
+    background-color: white;
+
+    padding: 20px;
+
+}
+
+
+
+/* Cards Grid */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+}
+
+
+.card {
+
+    background-color: skyblue;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background-color: #333;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    grid-column:1 / 3;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:700px){
+
+
+    .dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    header,
+    footer{
+
+        grid-column:1;
+
+    }
+
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
 }
