@@ -1983,3 +1983,189 @@ Practice completed:
 
 
 
+# 📅 Day 9: Responsive Design
+
+## 🎯 Goal
+
+Learn how to create mobile-friendly websites that work properly on different screen sizes.
+
+Responsive Design helps websites adjust their layout according to devices like:
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop screens
+
+---
+
+# 📚 Topics Covered
+
+## 1. Media Queries
+
+Media Queries are used to apply different CSS styles for different screen sizes.
+
+Example:
+
+```css
+@media(max-width:600px){
+
+    body{
+        background-color: lightblue;
+    }
+
+}
+```
+
+When screen size is less than 600px, these styles will apply.
+
+---
+
+# 2. Responsive Units
+
+Responsive units help create flexible layouts that adjust according to screen size.
+
+---
+
+## 3. Percentage (%)
+
+`%` is relative to the parent element size.
+
+Example:
+
+```css
+.container{
+
+    width:80%;
+
+}
+```
+
+The container takes 80% width of its parent.
+
+---
+
+## 4. rem
+
+`rem` is based on the root (`html`) font size.
+
+Example:
+
+```css
+h1{
+
+    font-size:2rem;
+
+}
+```
+
+If root size is 16px:
+
+```
+2rem = 32px
+```
+
+---
+
+## 5. em
+
+`em` is based on the parent element font size.
+
+Example:
+
+```css
+p{
+
+    font-size:2em;
+
+}
+```
+
+The size depends on the parent font size.
+
+---
+
+## 6. vw (Viewport Width)
+
+`vw` is based on screen width.
+
+Example:
+
+```css
+.box{
+
+    width:50vw;
+
+}
+```
+
+50vw means 50% of the viewport width.
+
+---
+
+## 7. vh (Viewport Height)
+
+`vh` is based on screen height.
+
+Example:
+
+```css
+.section{
+
+    height:100vh;
+
+}
+```
+
+100vh means full screen height.
+
+---
+
+# 8. Mobile First Design
+
+Mobile First Design means creating the website for mobile devices first, then adding styles for bigger screens.
+
+Example:
+
+```css
+.container{
+
+    width:100%;
+
+}
+
+
+@media(min-width:768px){
+
+.container{
+
+    width:80%;
+
+}
+
+}
+```
+
+First mobile layout is created, then desktop improvements are added.
+
+
+# 📝 Summary of Day 9
+
+Today I learned how to make websites responsive.
+
+Topics learned:
+
+- Media Queries → change styles based on screen size
+- `%` → flexible sizing
+- `rem` → root based sizing
+- `em` → parent based sizing
+- `vw` → viewport width
+- `vh` → viewport height
+- Mobile First Design → design mobile layout first
+
+Practice completed:
+
+✅ Created a responsive webpage  
+✅ Added mobile, tablet, and desktop layouts  
+
+
+
+
